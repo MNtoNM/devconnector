@@ -28,7 +28,6 @@ mongoose
   // Passport Config
   require('./config/passport')(passport);
 
-
 // Use routes
 app.use('/api/users', users);
 app.use('/api/profile', profile);
