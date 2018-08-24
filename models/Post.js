@@ -12,7 +12,7 @@ const PostSchema = new Schema({
     required: true
   },
   name: {
-    type: String,
+    type: String
   },
   avatar: {
     type: String
@@ -36,21 +36,19 @@ const PostSchema = new Schema({
         required: true
       },
       name: {
-        type: Schema.Types.ObjectId,
-        ref: 'users'
+        type: String
       },
       avatar: {
-        type: String,
-        required: true
+        type: String
       },
       date: {
-        type: Date, // This date refers to the comment
+        type: Date,
         default: Date.now
       }
     }
   ],
   date: {
-    type: Date, // This date refers to the post
+    type: Date,
     default: Date.now
   }
 });
