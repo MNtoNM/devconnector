@@ -36,7 +36,7 @@ class PostItem extends Component {
             <a href="profile.html">
               <img
                 className="rounded-circle d-none d-md-block"
-                src="{post.avatar}"
+                src={post.avatar}
                 alt=""
               />
             </a>
